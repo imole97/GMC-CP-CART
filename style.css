@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ------------- header section--------------- */
+header {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvjl-R7tjbcXXRilmuK7nckL9gGMqR-POEzg&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 60px 0 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+li a {
+    padding: 5px;
+    text-decoration: none;
+    background-color: white;
+}
+
+li a:hover {
+    color: black;
+    background: papayawhip;
+}
+
+.cart a {
+    background-color: darkcyan;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    /* text-decoration: none; */
+}
+
+.cart ion-icon {
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+}
+.overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: rgba(10, 10, 10, 0.3);
+}
+
+/* ----------------- product section ------------------- */
+
+.item-container,
+.products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.product {
+    position: relative;
+    margin: 0px 20px;
+    overflow: hidden;
+    /* background: cornsilk; */
+    width:250px;
+}
+
+.add-cart {
+    position: absolute;
+    width: 100%;
+    background-color: burlywood;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.product:hover .cart1, .product:hover .cart2, .product:hover .cart3, .product:hover .cart4 {
+    bottom: 50px;
+    opacity: 0.7;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+
+/* --------------------- CART.HTML PAGE ---------------------------- */
+
+
+.products-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.add, .remove {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 5px;
+    background: #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+   
+}
+
+.products-container .delete {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 5px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.like-btn  {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    color: lightgrey;
+}
+
+
+
+.like-btn i:hover {
+    cursor:pointer;
+}
+.product-quantity input {
+    width: 30px;
+    border-top:1px solid #000;
+    border-bottom: 1px solid #000;
+    font-weight: 800;
+    text-align: center
+}
+
+.product-item img {
+    width: 100px;
+    /* height: 90px; */
+}
+
+.product-header {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid rgb(245, 245, 176);
+    width: 95%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 50%;
+}
+
+.product-price,#tomato,#cabbage,#broccoli,#irishPotato{
+    width: 15%;
+    border-bottom: 1px solid rgb(245, 245, 176) ;
+    display: flex;
+    align-items: center;
+}
+
+.tomato, .cabbage, .broccoli, .tomato {
+    width: 15%;
+    border-bottom: 1px solid rgb(245, 245, 176) ;
+    display: flex;
+    align-items: center;
+
+}
+
+.product-quantity {
+    width: 25%;
+    border-bottom: 1px solid rgb(245, 245, 176) ;
+    display: flex;
+    align-items: center;
+}
+
+.product-total {
+    width: 10%;
+    border-bottom: 1px solid rgb(245, 245, 176) ;
+    display: flex;
+    align-items: center;
+}
+
+.product-item {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(245, 245, 176);
+}
+
+.product-row {
+    display: flex;
+    width: 100%;
+}
+
+.products {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 25%;
+}
+
+.basketTotal {
+    width: 10%;
+}

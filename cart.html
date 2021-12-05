@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My shopping cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f6dcf461c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" async></script>
+  </head>
+  <body>
+    <header>
+      <div class="overlay"></div>
+      <nav>
+        <h2>FARM PRIDE</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="cart">
+            <a href="cart.html"
+              ><ion-icon name="cart-outline"></ion-icon>Cart<span
+                id="cart-header"
+              ></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="products-container">
+      <div class="product-header">
+        <h5 class="product-title">PRODUCT</h5>
+        <h5 class="product-price">PRICE</h5>
+        <h5 class="product-quantity">QUANTITY</h5>
+        <!-- <h5 class="product-total">TOTAL</h5> -->
+      </div>
+
+      <div class="products">
+        <!--------------- Tomato --------------->
+        <div class="product-row">
+          <div class="product-item">
+            <button class="like-btn" id='like'><i class="fas fa-heart"></i></button>
+            <button class="delete">
+              <ion-icon name="trash-outline"></ion-icon>
+            </button>
+            <img src="./images/tomato.png" />
+            <span>Tomato</span>
+          </div>
+          <div class="product-price" id="tomato">#300</div>
+          <div class="product-quantity">
+            <button class="remove">-</button>
+            <input type="text" value="0" id="count-el" class="count" />
+            <button class="add">+</button>
+          </div>
+          <!-- <div class="product-total">100</div> -->
+        </div>
+
+        <!---------------- Cabbage ------------------>
+        <div class="product-row">
+          <div class="product-item">
+            <button class="like-btn" id='like'><i class="fas fa-heart"></i></button>
+            <button class="delete">
+              <ion-icon name="trash-outline"></ion-icon>
+            </button>
+            <img src="./images/cabbage.png" />
+            <span>Cabbage</span>
+          </div>
+          <div class="product-price" id="cabbage">#500</div>
+          <div class="product-quantity">
+            <button class="remove">-</button>
+            <input type="text" value="0" id="count-el" class="count" />
+            <button class="add">+</button>
+          </div>
+          <!-- <div class="product-total"></div> -->
+        </div>
+
+        <!------------------ Broccoli ---------------------->
+        <div class="product-row">
+          <div class="product-item">
+            <button class="like-btn" id='like'><i class="fas fa-heart"></i></button>
+            <button class="delete">
+              <ion-icon name="trash-outline"></ion-icon>
+            </button>
+            <img src="./images/broccoli.png" />
+            <span>Broccoli</span>
+          </div>
+          <div class="product-price" id="broccoli">#550</div>
+          <div class="product-quantity">
+            <button class="remove">-</button>
+            <input type="text" value="0" id="count-el" class="count" />
+            <button class="add">+</button>
+          </div>
+          <!-- <div class="product-total"></div> -->
+        </div>
+
+        <!-------------------------- Irish Potato -------------------->
+        <div class="product-row">
+          <div class="product-item">
+            <button class="like-btn" id='like'><i class="fas fa-heart"></i></button>
+            <button class="delete">
+              <ion-icon name="trash-outline"></ion-icon>
+            </button>
+            <img src="./images/irishPotato.png" />
+            <span>irishPotato</span>
+          </div>
+          <div class="product-price" id="irishPotato">#400</div>
+          <div class="product-quantity">
+            <button class="remove">-</button>
+            <input type="text" value="0" id="count-el" class="count" />
+            <button class="add">+</button>
+          </div>
+          <!-- <div class="product-total"></div> -->
+        </div>
+
+        <div class="basketTotalContainer">
+          <h4 class="basketTotalTitle">Basket Total</h4>
+          <h4 class="basketTotal"></h4>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
