@@ -55,8 +55,8 @@ function addItem (event) {
     let newValue = parseFloat(inputValue) + 1
     input.value = newValue
 
-    let cartHeader = document.getElementById('cart-header')
-    cartHeader.innerText = newValue;
+    // let cartHeader = document.getElementById('cart-header')
+    // cartHeader.innerText = newValue;
     
     updateCartTotal()
     
